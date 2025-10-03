@@ -1,0 +1,63 @@
+.hero-section{
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Good to explicitly add this here */
+  background-image: url('../assets/images/ProductBanner.jpg'); /* KEEP THIS LINE */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay */
+}
+
+.hero-content {
+  position: relative; /* Brings content above the overlay */
+  z-index: 1; /* Ensures content is clickable */
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 3em;
+  /* margin-bottom: 10px; */
+  margin: 0px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds depth to text */
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.hero-cta-button {
+  display: inline-block;
+  background-color: #007bff; /* Primary button color */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.hero-cta-button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+/* .haeding{
+    margin: 0;
+} */

@@ -1,0 +1,42 @@
+.gallery-container {
+  padding: 1rem;
+  font-family: sans-serif;
+}
+.gallery-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.product-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.product-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+}
+.pagination {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 8px 12px;
+  background: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.pagination button.active {
+  background: #333;
+  color: white;
+}

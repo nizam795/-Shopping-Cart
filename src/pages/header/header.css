@@ -1,0 +1,95 @@
+
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #5d2c6c; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  z-index: 1000;
+  
+}
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  color: white;
+}
+.sidebar {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+}
+.sidebar a.active {
+  color: #007bff;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    flex-direction: column;
+    background-color: #5d2c6c;
+    padding: 60px 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 100;
+  }
+
+  .sidebar a {
+    color: black;
+  }
+
+  .sidebar.open {
+    left: 0;
+    width: 150px;
+  }
+
+  .left-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.cart-count {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+  margin-left: 6px;
+  vertical-align: top;
+}

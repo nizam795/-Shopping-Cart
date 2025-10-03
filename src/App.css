@@ -1,0 +1,46 @@
+
+.product-btn {
+  /* width: 100%;  */
+  margin-top: auto;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  /* font-size: 16px; */
+  width: fit-content;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.2s;
+}
+.product-btn:active {
+  transform: scale(0.95);
+  background-color: #0056b3;
+}
+.circle-btn{
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+  height: 28px;
+  width: 28px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.input-button-box{
+  height: 28px;
+  width: 28px;
+  border: 1px solid #000;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: #fff;
+
+  
+
+}
+
+
